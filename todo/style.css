@@ -27,6 +27,9 @@ body {
   align-items: center;
 }
 
+.completed {
+  text-decoration: line-through;
+}
 
 li {
   list-style-type: none;
@@ -47,8 +50,8 @@ li .edditing {
 .container input {
   position: relative;
   color: inherit; 
-  width: 200px;
-  padding: 15px 260px 15px 15px;
+  width: 450px;
+  padding: 15px 60px 15px 15px;
   box-shadow: 2px 3px 7px  grey;
   border: none;
   font-family: inherit;
@@ -78,7 +81,7 @@ li .edditing {
 
 .todo-list li label {
   word-break: break-all;
-  padding: 15px 15px 15px 60px;
+  padding: 15px;
   line-height: 1.2;
   transition: color 0.4s;
 }
@@ -117,7 +120,7 @@ li .edditing {
 
 .input_checkbox {
   opacity: 0;
-  width: 30px;
+  width: 50px !important;
   height: 40px;
 }
 
@@ -138,17 +141,17 @@ button {
 
 .btnCancel {
   display: none;
-    position: absolute;
-    top: 0;
-    right: 10px;
-    bottom: 0;
-    width: 40px;
-    height: 40px;
-    margin: auto 0;
-    font-size: 30px;
-    color: #cc9a9a;
-    margin-bottom: 11px;
-    transition: color 0.2s ease-out;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 25px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
 }
  
 .divWrapper:hover .btnCancel{
@@ -174,4 +177,42 @@ button {
   transform: rotate(90deg); 
 }  */
 
+.footer {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  color: #777;
+  padding: 10px 0px;
+  height: 15px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+  font-size: 14px;
+} 
+
+.count {
+  float: left;
+  text-align: left;
+}
+
+.filters li {
+  display: inline;
+}
+
+.filters li a {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.clear-completed {
+  float: right;
+  position: relative;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
 

@@ -13,6 +13,21 @@
   <section class="container">
   <input class="toggle" id="inpt" type="text" placeholder="What needs to be done?">
     <ul class="todo-list"></ul>
+    <footer class="footer">
+      <span id="countTodo"><strong id="count"></strong> item left</span>
+      <ul class="filters">
+        <li>
+          <a class="all" href="#/">All</a>
+        </li>
+        <li>
+          <a id="active" href="#/active">Active</a>
+        </li>
+        <li>
+          <a id="complited" href="#/complited">Complited</a>
+        </li>
+      </ul>
+      <button class="clear-completed">Clear Completed</button>
+    </footer>
   <script src="script.js"></script>
 </body>
 </html>
